@@ -7,13 +7,17 @@
   "devDependencies": {
     "@babel/preset-env": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^24.8.0",
     "react-hot-loader": "^4.12.7",
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.6"
   },
   "scripts": {
     "build": "webpack --config ./config/webpack.config.js --mode development",
-    "start:dev": "webpack-dev-server --config ./config/webpack.config.js"
+    "start:dev": "webpack-dev-server --config ./config/webpack.config.js",
+    "test": "jest --config ./config/jest/jest.config.js"
   },
   "dependencies": {
     "@babel/core": "^7.5.4",
